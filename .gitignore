@@ -3,8 +3,7 @@ node_modules/
 *.pnp
 .pnp.js
 
-# Lock files
-pnpm-lock.yaml
+# Lock files (keep pnpm-lock.yaml in repo)
 package-lock.json
 yarn.lock
 
