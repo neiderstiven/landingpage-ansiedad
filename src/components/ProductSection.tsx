@@ -78,7 +78,7 @@ const ProductSection = () => {
                         <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl" />
                             <img
-                                src="assets/adios-ansiedad.png"
+                                src="/landingpage-ansiedad/assets/adios-ansiedad.png"
                                 alt="Adiós Ansiedad - PDF Guide"
                                 className="relative rounded-2xl shadow-2xl max-w-sm w-full"
                             />
