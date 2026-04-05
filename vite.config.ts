@@ -21,6 +21,7 @@ process.env.VITE_APP_LOGO_URL ??= process.env.OVERVIEW_LOGO_URL ?? 'https://app.
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/landingpage-ansiedad/',
   plugins: [
     viteSourceLocator({
       prefix: 'mgx',
