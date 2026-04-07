@@ -49,7 +49,7 @@ const BonusSection = () => {
                     <div className="relative max-w-md w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-purple-500/20 rounded-2xl blur-xl" />
                         <img
-                            src="/landingpage-ansiedad/assets/094225f9-287e-4d50-8b28-c5c8050bfa5c.png"
+                            src="/assets/094225f9-287e-4d50-8b28-c5c8050bfa5c.png"
                             alt="Kit de bonos incluidos"
                             className="relative rounded-2xl shadow-2xl w-full"
                         />
