@@ -17,16 +17,16 @@ const BiblicalPromises = () => {
   // Pick a random promise each time the component renders (i.e., on page reload)
   const randomPromise = biblicalPromises[Math.floor(Math.random() * biblicalPromises.length)];
 
-    return (
-      <div className="text-center bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/20 rounded-2xl px-8 py-6 mx-16 mb-16">
-        <p className="text-xl sm:text-2xl font-bold text-white mb-2">
-          {randomPromise}
-        </p>
-        <footer className="text-[#C4B5D4] text-sm">
-          — Con fe y esperanza
-        </footer>
-      </div>
-    );
+  return (
+    <div className="text-center bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/20 rounded-2xl px-8 py-6 mx-16 mb-16">
+      <p className="text-xl sm:text-2xl font-bold text-white mb-2">
+        {randomPromise}
+      </p>
+      <footer className="text-[#C4B5D4] text-sm">
+        — Con Dios todo es posible
+      </footer>
+    </div>
+  )
 };
 
 export default BiblicalPromises;
