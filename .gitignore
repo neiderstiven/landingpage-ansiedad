@@ -12,6 +12,9 @@ dist/
 dist-ssr/
 *.local
 
+# Vite temp files
+vite.config.ts.timestamp-*.mjs
+
 # IDE
 .vscode/
 .idea/
@@ -19,9 +22,6 @@ dist-ssr/
 *.swo
 *~
 .DS_Store
-
-# Build tools
-.mgx/
 
 # Environment
 .env
@@ -42,3 +42,6 @@ Thumbs.db
 
 # skills
 .skills/
+
+# Qwen Code local settings
+.qwen/

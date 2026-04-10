@@ -87,7 +87,10 @@ const TestimonialSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-2xl blur-xl" />
                         <img
                             src="/assets/de9960fa-8e05-424a-9aab-ebe0a648f48d.png"
-                            alt="Persona en paz después de usar Adiós Ansiedad"
+                            alt="Persona en paz después de usar Adiós Ansiedad - Testimonio de usuario satisfecho"
+                            width={500}
+                            height={400}
+                            loading="lazy"
                             className="relative rounded-2xl shadow-2xl w-full"
                         />
                     </div>

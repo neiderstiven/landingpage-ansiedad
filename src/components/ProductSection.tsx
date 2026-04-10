@@ -79,7 +79,9 @@ const ProductSection = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl" />
                             <img
                                 src="/assets/adios-ansiedad.png"
-                                alt="Adiós Ansiedad - PDF Guide"
+                                alt="Adiós Ansiedad - PDF Guide con 15 técnicas científicas para calmar la ansiedad"
+                                width={400}
+                                height={500}
                                 className="relative rounded-2xl shadow-2xl max-w-sm w-full"
                             />
                             {/* Price badge */}

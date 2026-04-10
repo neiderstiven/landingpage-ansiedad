@@ -50,7 +50,10 @@ const BonusSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-purple-500/20 rounded-2xl blur-xl" />
                         <img
                             src="/assets/094225f9-287e-4d50-8b28-c5c8050bfa5c.png"
-                            alt="Kit de bonos incluidos"
+                            alt="Kit de bonos incluidos - Kit de Emergencia y Guía de Rituales de Sueño"
+                            width={400}
+                            height={300}
+                            loading="lazy"
                             className="relative rounded-2xl shadow-2xl w-full"
                         />
                     </div>
