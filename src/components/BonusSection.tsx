@@ -49,7 +49,7 @@ const BonusSection = () => {
                     <div className="relative max-w-md w-full">
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-purple-500/20 rounded-2xl blur-xl" />
                         <img
-                            src="/assets/094225f9-287e-4d50-8b28-c5c8050bfa5c.png"
+                            src="/assets/bonus-kit-resources.webp"
                             alt="Kit de bonos incluidos - Kit de Emergencia y Guía de Rituales de Sueño"
                             width={400}
                             height={300}

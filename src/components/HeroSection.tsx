@@ -14,7 +14,7 @@ const HeroSection = () => {
                 className="absolute inset-0 bg-cover bg-center opacity-30"
                 style={{
                     backgroundImage:
-                        "url('assets/fea9ef15-2ed1-469d-9d1f-57c082020867.png')",
+                        "url('assets/hero-bg-anxiety.webp')",
                 }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#0F0B1E]/70 via-[#0F0B1E]/50 to-[#0F0B1E]" />
