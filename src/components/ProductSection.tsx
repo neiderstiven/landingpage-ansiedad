@@ -4,23 +4,23 @@ import { Check, ArrowRight, Zap, Shield, Eye, FlaskConical, Wallet, BookOpen } f
 const features = [
     {
         icon: <Zap className="w-5 h-5" />,
-        title: "Funciona en 60 segundos",
-        description: "Técnicas diseñadas para calmar tu ansiedad en el momento exacto de la crisis.",
+        title: "Acción rápida",
+        description: "Técnicas diseñadas para usar en momentos de tensión o preocupación.",
     },
     {
         icon: <Shield className="w-5 h-5" />,
-        title: "Sin medicación",
-        description: "100% natural. Sin efectos secundarios. Sin dependencia.",
+        title: "Método natural",
+        description: "Herramientas prácticas sin efectos secundarios ni dependencia.",
     },
     {
         icon: <Eye className="w-5 h-5" />,
         title: "Discretas e invisibles",
-        description: "Puedes usarlas en una reunión, en el metro, o en la cama. Nadie lo notará.",
+        description: "Puedes usarlas en una reunión, en el transporte, o en casa. Nadie lo notará.",
     },
     {
         icon: <FlaskConical className="w-5 h-5" />,
-        title: "Respaldo científico",
-        description: "Basadas en neurociencia, PNL y técnicas cognitivo-conductuales probadas.",
+        title: "Respaldo práctico",
+        description: "Basadas en técnicas cognitivo-conductuales y ejercicios de respiración.",
     },
     {
         icon: <Wallet className="w-5 h-5" />,
@@ -36,7 +36,7 @@ const features = [
 
 const comparison = [
     { yours: "15 técnicas específicas", theirs: "Consejos generales" },
-    { yours: "Funciona en 60 segundos", theirs: '"Con el tiempo verás resultados"' },
+    { yours: "Acción rápida", theirs: '"Con el tiempo verás resultados"' },
     { yours: "PDF = acceso inmediato", theirs: "Cursos largos que no terminas" },
     { yours: "Lenguaje real y empático", theirs: "Jerga psicológica" },
     { yours: "Incluye kit + rituales", theirs: "Solo teoría" },
@@ -66,8 +66,8 @@ const ProductSection = () => {
                         </span>
                     </h2>
                     <p className="text-[#C4B5D4] text-lg max-w-2xl mx-auto">
-                        El sistema de bolsillo con 15 técnicas científicas para calmar tu ansiedad
-                        en menos de 60 segundos.
+                        El sistema de bolsillo con 15 técnicas prácticas para gestionar el estrés
+                        en momentos de tensión.
                     </p>
                 </div>
 
@@ -99,13 +99,13 @@ const ProductSection = () => {
                         </h3>
                         <ul className="space-y-4">
                             {[
-                                "15 técnicas paso a paso para calmar la ansiedad al instante",
-                                "Técnicas de respiración que funcionan en 30-60 segundos",
-                                "Método de grounding para ataques de pánico",
-                                "Rituales nocturnos para dormir sin pensamientos intrusivos",
+                                "15 técnicas paso a paso para momentos de tensión",
+                                "Técnicas de respiración de aplicación rápida",
+                                "Método de grounding para momentos intensos",
+                                "Rituales nocturnos para descansar mejor",
                                 "Técnicas discretas para usar en público sin que nadie lo note",
-                                "Ejercicios de reprogramación mental basados en neurociencia",
-                                "Guía de emergencia: qué hacer cuando sientes que pierdes el control",
+                                "Ejercicios de reprogramación mental prácticos",
+                                "Guía de bolsillo: qué hacer cuando lo necesites",
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3">
                                     <div className="w-6 h-6 bg-emerald-500/20 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">

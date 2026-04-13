@@ -22,16 +22,15 @@ const FooterCTA = () => {
                     </div>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-                        Deja de sufrir en silencio.
+                        Recupera momentos de calma.
                         <br />
                         <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            Tu calma está a un clic.
+                            La calma está a un clic.
                         </span>
                     </h2>
 
                     <p className="text-[#C4B5D4] text-lg max-w-xl mx-auto mb-10">
-                        Por menos de lo que cuesta un café, tendrás 15 técnicas científicas para calmar tu
-                        ansiedad en segundos. Acceso inmediato. Tuyo para siempre.
+                        Un kit práctico de bienestar para usar cuando lo necesites. Descarga inmediata.
                     </p>
 
                     {/* Price card */}
@@ -64,7 +63,7 @@ const FooterCTA = () => {
                             className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg font-bold py-7 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-[1.02]"
                             onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
                         >
-                            Descargar Ahora — $5.99 USD
+                            Descargar el Kit — $5.99 USD
                             <ArrowRight className="w-5 h-5 ml-2" />
                         </Button>
 
@@ -99,15 +98,23 @@ const FooterCTA = () => {
                     <p className="text-[#C4B5D4]/40 text-sm mb-4">
                         Hecho con{" "}
                         <Heart className="w-3.5 h-3.5 inline text-pink-400 fill-pink-400" /> para quienes
-                        luchan contra la ansiedad cada día.
+                        buscan herramientas prácticas para gestionar el estrés.
                     </p>
                     <p className="text-[#C4B5D4]/30 text-xs mb-2">
                         © {new Date().getFullYear()} Adiós Ansiedad. Todos los derechos reservados.
                     </p>
-                    <p className="text-[#C4B5D4]/20 text-xs max-w-lg mx-auto">
+                    <p className="text-[#C4B5D4]/20 text-xs max-w-lg mx-auto mb-4">
                         Aviso: Este producto es un recurso educativo y no reemplaza el consejo médico profesional.
-                        Si experimentas síntomas severos de ansiedad, consulta a un profesional de salud mental.
+                        Si experimentas síntomas severos, consulta a un profesional de salud mental.
                     </p>
+                    <div className="bg-[#241D3D]/40 border border-white/10 rounded-xl p-4 max-w-2xl mx-auto">
+                        <p className="text-[#C4B5D4]/40 text-xs leading-relaxed">
+                            <strong className="text-[#C4B5D4]/60">Disclaimer:</strong> Este producto es una guía educativa de bienestar. 
+                            No sustituye consejo médico, psicológico o psiquiátrico profesional. No diagnostica ni trata condiciones de salud. 
+                            Los resultados pueden variar de persona a persona. Si estás experimentando una crisis de salud mental, 
+                            busca ayuda profesional inmediatamente.
+                        </p>
+                    </div>
                 </div>
             </footer>
         </>

@@ -34,12 +34,12 @@ const painPoints = [
 ];
 
 const failedSolutions = [
-    { name: "Meditación", reason: "No puedes concentrarte cuando estás ansioso/a" },
-    { name: "Apps como Calm o Headspace", reason: "Las abandonas en 1 semana" },
-    { name: "Terapia", reason: "Cara, lenta, y no siempre encuentras buen terapeuta" },
-    { name: "Medicación", reason: "Efectos secundarios y miedo a la dependencia" },
-    { name: "Consejos de YouTube", reason: "Genéricos y no funcionan en el momento de crisis" },
-    { name: "Tés y aceites esenciales", reason: "Efecto mínimo cuando la ansiedad es real" },
+    { name: "Meditación", reason: "No es fácil concentrarse en momentos de tensión" },
+    { name: "Apps como Calm o Headspace", reason: "Se abandonan en 1 semana" },
+    { name: "Terapia", reason: "Costosa y no siempre se encuentra buen terapeuta" },
+    { name: "Medicación", reason: "Efectos secundarios y preocupación por dependencia" },
+    { name: "Consejos de YouTube", reason: "Genéricos y no diseñados para el momento de tensión" },
+    { name: "Tés y aceites esenciales", reason: "Efecto mínimo cuando la tensión es real" },
 ];
 
 const PainSection = () => {
@@ -54,11 +54,11 @@ const PainSection = () => {
                         ¿Te identificas con esto?
                     </p>
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4">
-                        Sabemos lo que estás{" "}
-                        <span className="text-red-400">sintiendo</span>
+                        Lo que sentimos{" "}
+                        <span className="text-red-400">en momentos de tensión</span>
                     </h2>
                     <p className="text-[#C4B5D4] text-lg max-w-2xl mx-auto">
-                        No estás loco/a. No estás exagerando. Lo que sientes es real, y hay una solución.
+                        No estás solo/a. Lo que sientes es real, y hay herramientas que pueden ayudar.
                     </p>
                 </div>
 
@@ -80,11 +80,11 @@ const PainSection = () => {
                 {/* Failed Solutions */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-extrabold text-white mb-4">
-                        Ya probaste de todo...{" "}
-                        <span className="text-red-400">y nada funcionó</span>
+                        Cuando otras opciones{" "}
+                        <span className="text-red-400">no dan resultado</span>
                     </h2>
                     <p className="text-[#C4B5D4] text-lg max-w-2xl mx-auto">
-                        No es tu culpa. Estas soluciones no están diseñadas para funcionar en el momento de crisis.
+                        No es tu culpa. Estas opciones no están diseñadas para funcionar en el momento de tensión.
                     </p>
                 </div>
 
@@ -112,9 +112,9 @@ const PainSection = () => {
                             ¿Y si existiera algo diferente?
                         </p>
                         <p className="text-[#C4B5D4]">
-                            Algo que funcione en <span className="text-purple-400 font-semibold">60 segundos</span>,
-                            que puedas usar <span className="text-purple-400 font-semibold">en cualquier lugar</span>,
-                            y que <span className="text-purple-400 font-semibold">realmente funcione</span> cuando más lo necesitas.
+                            Algo que actúa <span className="text-purple-400 font-semibold">de forma rápida</span>,
+                            que puedes usar <span className="text-purple-400 font-semibold">en cualquier lugar</span>,
+                            y que <span className="text-purple-400 font-semibold">realmente ayuda</span> cuando más lo necesitas.
                         </p>
                     </div>
                 </div>

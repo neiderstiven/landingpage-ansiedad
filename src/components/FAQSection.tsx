@@ -7,19 +7,19 @@ import {
 
 const faqs = [
     {
-        question: "¿Realmente funciona en 60 segundos?",
+        question: "¿Qué tan rápido actúan las técnicas?",
         answer:
-            "Sí. Las técnicas están diseñadas específicamente para actuar rápido. Algunas funcionan en 30 segundos, otras en 60. No son meditaciones largas ni ejercicios complicados. Son herramientas de emergencia que puedes usar en el momento exacto que la ansiedad te golpea.",
+            "Las técnicas están diseñadas para actuar de manera rápida. Algunas se pueden completar en 30 segundos, otras en un minuto. No son meditaciones largas ni ejercicios complicados. Son herramientas que puedes usar en el momento exacto en que sientes tensión o preocupación.",
     },
     {
-        question: "¿Funciona si ya probé de todo?",
+        question: "¿Funciona si ya probé otras opciones?",
         answer:
-            "Especialmente si ya probaste de todo. La mayoría de soluciones (meditación, apps, tés) no están diseñadas para funcionar en momentos de crisis. Estas 15 técnicas sí lo están. Son diferentes porque atacan la ansiedad en el momento, no como prevención a largo plazo.",
+            "Especialmente si ya probaste otras opciones. La mayoría de soluciones (meditación, apps, tés) no están diseñadas para usarse en momentos de tensión. Estas 15 técnicas sí lo están. Son diferentes porque se enfocan en gestionar la ansiedad en el momento, no como prevención a largo plazo.",
     },
     {
         question: "¿Es un reemplazo de la terapia?",
         answer:
-            "No. Este PDF es un complemento práctico. Tu terapeuta te ayuda a entender POR QUÉ tienes ansiedad. Este PDF te enseña QUÉ HACER cuando la ansiedad te ataca AHORA MISMO. Muchos terapeutas recomiendan este tipo de herramientas a sus pacientes.",
+            "No. Este material es un complemento práctico. Este contenido no sustituye el acompañamiento psicológico o psiquiátrico profesional. Muchos profesionales recomiendan este tipo de herramientas a sus pacientes como recurso adicional entre sesiones.",
     },
     {
         question: "¿Cómo recibo el PDF?",
@@ -44,7 +44,7 @@ const faqs = [
     {
         question: "¿Puedo usarlo en mi celular?",
         answer:
-            "Sí. El PDF está optimizado para verse bien en cualquier dispositivo: celular, tablet o computadora. Muchas personas lo guardan en su celular para tenerlo siempre a mano como su 'botón de emergencia'.",
+            "Sí. El PDF está optimizado para verse bien en cualquier dispositivo: celular, tablet o computadora. Muchas personas lo guardan en su celular para tenerlo siempre a mano.",
     },
 ];
 

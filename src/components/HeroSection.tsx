@@ -28,27 +28,27 @@ const HeroSection = () => {
                 <div className="flex justify-center mb-6">
                     <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/30 px-4 py-2 text-sm font-medium rounded-full">
                         <Star className="w-4 h-4 mr-2 fill-amber-400" />
-                        +2,500 personas ya calmaron su ansiedad
+                        +2,500 descargas del kit de bienestar
                     </Badge>
                 </div>
 
                 {/* Main headline */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
-                    Calma tu ansiedad en{" "}
+                    Técnicas prácticas para{" "}
                     <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-                        menos de 60 segundos
+                        recuperar la calma en momentos reales
                     </span>
                 </h1>
 
                 {/* Subheadline */}
                 <p className="text-lg sm:text-xl md:text-2xl text-[#C4B5D4] max-w-3xl mx-auto mb-4 leading-relaxed">
-                    15 técnicas científicas que funcionan{" "}
-                    <span className="text-white font-semibold">incluso si ya probaste de todo</span>.
-                    Sin terapia. Sin pastillas. Sin que nadie lo note.
+                    15 métodos de bienestar que puedes usar{" "}
+                    <span className="text-white font-semibold">incluso si ya probaste otras opciones</span>.
+                    Guía de lectura rápida. Discretas. Para usar sin que nadie lo note.
                 </p>
 
                 <p className="text-base text-[#C4B5D4]/80 mb-8 max-w-2xl mx-auto">
-                    El sistema de bolsillo que más de 2,500 personas usan cuando la ansiedad los golpea.
+                    Un sistema de bolsillo en tu celular con herramientas para gestionar el estrés del día a día. Usado por más de 2,500 personas.
                 </p>
 
                 {/* CTA Button */}
@@ -56,9 +56,9 @@ const HeroSection = () => {
                     <Button
                         onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
                         size="lg"
-                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg sm:text-xl font-bold px-10 sm:px-14 py-7 sm:py-8 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105 animate-pulse"
+                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg sm:text-xl font-bold px-10 sm:px-14 py-7 sm:py-8 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
                     >
-                        Quiero Mi Copia Ahora — $5.99 USD
+                        Descarga el Kit por $5.99 USD
                     </Button>
                     <p className="text-sm text-[#C4B5D4]/60 flex items-center gap-2">
                         <ShieldCheck className="w-4 h-4 text-emerald-400" />
@@ -69,8 +69,8 @@ const HeroSection = () => {
                 {/* Feature pills */}
                 <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
                     {[
-                        { icon: <Zap className="w-4 h-4" />, text: "Funciona en 60 seg" },
-                        { icon: <ShieldCheck className="w-4 h-4" />, text: "Respaldo científico" },
+                        { icon: <Zap className="w-4 h-4" />, text: "Técnicas discretas" },
+                        { icon: <ShieldCheck className="w-4 h-4" />, text: "Respaldo práctico" },
                         { icon: <Clock className="w-4 h-4" />, text: "Acceso inmediato" },
                     ].map((item, i) => (
                         <div

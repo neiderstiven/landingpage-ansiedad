@@ -4,46 +4,46 @@ const testimonials = [
     {
         name: "María G.",
         role: "Profesional, 34 años",
-        text: "Llevaba 3 años con ansiedad en el trabajo. La técnica #7 del PDF me salvó en una reunión importante. En menos de 1 minuto estaba calmada. No exagero.",
+        text: "Me gustó porque es rápido de aplicar en el trabajo. Las técnicas son concretas y las puedo usar sin que nadie lo note. Muy práctica.",
         stars: 5,
     },
     {
         name: "Carlos R.",
         role: "Emprendedor, 29 años",
-        text: "Probé Calm, Headspace, terapia... nada me funcionaba en el momento de crisis. Este PDF es diferente. Lo tengo en mi celular y lo uso cada vez que la ansiedad me golpea.",
+        text: "Probé varias apps y opciones antes. Este material es diferente porque está pensado para usar en el momento justo. Lo tengo siempre en mi celular.",
         stars: 5,
     },
     {
         name: "Ana L.",
         role: "Madre y profesional, 41 años",
-        text: "Los rituales de sueño cambiaron mi vida. Llevaba meses despertándome a las 3AM con el corazón acelerado. Ahora duermo toda la noche. Gracias infinitas.",
+        text: "Los rituales de sueño me parecieron muy útiles. Era lo que más necesitaba para descansar mejor. Lo recomiendo.",
         stars: 5,
     },
     {
         name: "Diego M.",
         role: "Estudiante, 23 años",
-        text: "Tuve mi primer ataque de pánico en un examen. Desde entonces vivía con miedo. La técnica de grounding me devolvió la confianza. Simple pero poderosa.",
+        text: "La técnica de grounding me pareció simple y efectiva. Me dio más confianza para manejar momentos de tensión en exámenes.",
         stars: 5,
     },
     {
         name: "Laura P.",
         role: "Freelancer, 37 años",
-        text: "Lo mejor es que nadie nota que estás usando las técnicas. Las hago en el metro, en reuniones, en la cama. Son invisibles pero funcionan increíblemente bien.",
+        text: "Lo mejor es que nadie nota que estás usando las técnicas. Las uso en el transporte, en reuniones, en casa. Son discretas y muy prácticas.",
         stars: 5,
     },
     {
         name: "Roberto S.",
         role: "Gerente, 45 años",
-        text: "Mi psicólogo cobra $80 la hora. Este PDF de $5.99 me dio herramientas más prácticas para el día a día. No reemplaza la terapia, pero es el complemento perfecto.",
+        text: "Me dio herramientas más prácticas para el día a día. No reemplaza el acompañamiento profesional, pero es un complemento muy útil.",
         stars: 5,
     },
 ];
 
 const stats = [
-    { icon: <Users className="w-6 h-6" />, value: "2,500+", label: "Personas ayudadas" },
+    { icon: <Users className="w-6 h-6" />, value: "2,500+", label: "Descargas del kit" },
     { icon: <Star className="w-6 h-6" />, value: "4.9/5", label: "Calificación promedio" },
     { icon: <Globe className="w-6 h-6" />, value: "15+", label: "Países" },
-    { icon: <TrendingUp className="w-6 h-6" />, value: "93%", label: "Reportan mejoría" },
+    { icon: <TrendingUp className="w-6 h-6" />, value: "7", label: "Días de garantía" },
 ];
 
 const TestimonialSection = () => {
