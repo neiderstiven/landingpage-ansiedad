@@ -1,7 +1,37 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Clock, CreditCard, ArrowRight, Heart } from "lucide-react";
+import { useState, useEffect } from "react";
+
+// Countdown timer: sets deadline to end of current day (creates real urgency)
+const useCountdown = () => {
+    const getTimeLeft = () => {
+        const now = new Date();
+        const endOfDay = new Date(now);
+        endOfDay.setHours(23, 59, 59, 999);
+        const diff = endOfDay.getTime() - now.getTime();
+
+        const hours = Math.floor(diff / (1000 * 60 * 60));
+        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+        return { hours, minutes, seconds };
+    };
+
+    const [timeLeft, setTimeLeft] = useState(getTimeLeft);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(getTimeLeft);
+        }, 1000);
+        return () => clearInterval(timer);
+    }, []);
+
+    return timeLeft;
+};
 
 const FooterCTA = () => {
+    const { hours, minutes, seconds } = useCountdown();
+
     return (
         <>
             {/* Final CTA Section */}
@@ -13,12 +43,25 @@ const FooterCTA = () => {
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[200px]" />
 
                 <div className="max-w-3xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-                    {/* Urgency */}
+                    {/* Urgency with countdown */}
                     <div className="inline-flex items-center gap-2 bg-red-500/10 border border-red-500/20 rounded-full px-5 py-2 mb-8">
                         <Clock className="w-4 h-4 text-red-400" />
                         <span className="text-red-400 font-semibold text-sm">
-                            Precio de lanzamiento por tiempo limitado
+                            Precio de lanzamiento expira en:
                         </span>
+                        <div className="flex items-center gap-1 ml-1">
+                            <span className="bg-red-500/20 text-red-300 font-bold text-sm px-2 py-0.5 rounded min-w-[28px] text-center">
+                                {String(hours).padStart(2, "0")}
+                            </span>
+                            <span className="text-red-400/60 text-sm">:</span>
+                            <span className="bg-red-500/20 text-red-300 font-bold text-sm px-2 py-0.5 rounded min-w-[28px] text-center">
+                                {String(minutes).padStart(2, "0")}
+                            </span>
+                            <span className="text-red-400/60 text-sm">:</span>
+                            <span className="bg-red-500/20 text-red-300 font-bold text-sm px-2 py-0.5 rounded min-w-[28px] text-center">
+                                {String(seconds).padStart(2, "0")}
+                            </span>
+                        </div>
                     </div>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
@@ -45,7 +88,7 @@ const FooterCTA = () => {
                         <ul className="text-left space-y-3 mb-8">
                             {[
                                 "PDF Adiós Ansiedad — 15 técnicas",
-                                "Kit de Emergencia Anti-Ansiedad",
+                                "Kit de Emergencia para Momentos Intensos",
                                 "Guía de Rituales de Sueño Profundo",
                                 "Garantía de satisfacción 7 días",
                             ].map((item, i) => (
@@ -93,7 +136,7 @@ const FooterCTA = () => {
             </section>
 
             {/* Footer */}
-            <footer className="bg-[#0F0B1E] border-t border-white/5 py-10">
+            <footer className="bg-[#0F0B1E] border-t border-white/5 py-10 sm:pb-10 pb-20">
                 <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
                     <p className="text-[#C4B5D4]/40 text-sm mb-4">
                         Hecho con{" "}

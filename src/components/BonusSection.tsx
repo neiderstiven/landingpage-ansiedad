@@ -4,16 +4,16 @@ import { Gift, FileText, Moon, ListChecks, Smartphone, ArrowRight } from "lucide
 const bonuses = [
     {
         icon: <FileText className="w-7 h-7" />,
-        title: "Kit de Emergencia Anti-Ansiedad",
+        title: "Kit de Emergencia para Momentos Intensos",
         description:
-            "Hoja de 1 página 12 tarjetas recortables para el entorno real que te ayudarán a calmar la ansiedad en el momento.",
+            "Hoja de 1 página con 12 tarjetas recortables para el entorno real que te ayudarán a encontrar calma en el momento.",
         value: "$7",
     },
     {
         icon: <Moon className="w-7 h-7" />,
         title: "Guía de Rituales de Sueño Profundo",
         description:
-            "5 rituales nocturnos para apagar tu mente y dormir como no has dormido en meses. Sin pastillas.",
+            "5 rituales nocturnos para apagar la mente y lograr una rutina nocturna para un descanso más profundo.",
         value: "$9",
     },
 ];
@@ -50,7 +50,7 @@ const BonusSection = () => {
                         <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-purple-500/20 rounded-2xl blur-xl" />
                         <img
                             src="/assets/bonus-kit-resources.webp"
-                            alt="Kit de bonos incluidos - Kit de Emergencia y Guía de Rituales de Sueño"
+                            alt="Kit de bonos incluidos - Kit de Emergencia y Guía de Sueño"
                             width={400}
                             height={300}
                             loading="lazy"

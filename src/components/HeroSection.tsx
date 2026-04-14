@@ -34,9 +34,9 @@ const HeroSection = () => {
 
                 {/* Main headline */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-tight mb-6">
-                    Técnicas prácticas para{" "}
+                    15 técnicas de bienestar{" "}
                     <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 bg-clip-text text-transparent">
-                        recuperar la calma en momentos reales
+                        para el momento en que más se necesitan
                     </span>
                 </h1>
 

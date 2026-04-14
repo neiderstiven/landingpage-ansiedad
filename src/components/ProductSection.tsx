@@ -20,7 +20,7 @@ const features = [
     {
         icon: <FlaskConical className="w-5 h-5" />,
         title: "Respaldo práctico",
-        description: "Basadas en técnicas cognitivo-conductuales y ejercicios de respiración.",
+        description: "Basadas en metodologías de gestión emocional y técnicas de respiración.",
     },
     {
         icon: <Wallet className="w-5 h-5" />,
@@ -79,7 +79,7 @@ const ProductSection = () => {
                             <div className="absolute inset-0 bg-gradient-to-r from-purple-600/30 to-pink-600/30 rounded-3xl blur-2xl" />
                             <img
                                 src="/assets/product-mockup.webp"
-                                alt="Adiós Ansiedad - PDF Guide con 15 técnicas científicas para calmar la ansiedad"
+                                alt="Adiós Ansiedad - Kit de bienestar con 15 técnicas prácticas"
                                 width={400}
                                 height={500}
                                 className="relative rounded-2xl shadow-2xl max-w-sm w-full"

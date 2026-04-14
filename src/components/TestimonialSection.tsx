@@ -4,37 +4,37 @@ const testimonials = [
     {
         name: "María G.",
         role: "Profesional, 34 años",
-        text: "Me gustó porque es rápido de aplicar en el trabajo. Las técnicas son concretas y las puedo usar sin que nadie lo note. Muy práctica.",
+        text: "Usé la técnica de respiración en medio de una reunión difícil y pude terminarla con calma. La llevo siempre en el celular por si la necesito.",
         stars: 5,
     },
     {
         name: "Carlos R.",
         role: "Emprendedor, 29 años",
-        text: "Probé varias apps y opciones antes. Este material es diferente porque está pensado para usar en el momento justo. Lo tengo siempre en mi celular.",
+        text: "Probé varias apps antes. Este material es diferente porque se usa en el momento justo. La técnica de grounding la aplico antes de reuniones con inversores.",
         stars: 5,
     },
     {
         name: "Ana L.",
         role: "Madre y profesional, 41 años",
-        text: "Los rituales de sueño me parecieron muy útiles. Era lo que más necesitaba para descansar mejor. Lo recomiendo.",
+        text: "Los rituales nocturnos del bono fueron lo que más necesitaba. El de 'descarga mental por escrito' me ayuda a vaciar la cabeza antes de dormir.",
         stars: 5,
     },
     {
         name: "Diego M.",
         role: "Estudiante, 23 años",
-        text: "La técnica de grounding me pareció simple y efectiva. Me dio más confianza para manejar momentos de tensión en exámenes.",
+        text: "La técnica 5-4-3-2-1 de grounding la usé antes de un examen final. Me tomó menos de un minuto y pude concentrarme. Simple y concreta.",
         stars: 5,
     },
     {
         name: "Laura P.",
         role: "Freelancer, 37 años",
-        text: "Lo mejor es que nadie nota que estás usando las técnicas. Las uso en el transporte, en reuniones, en casa. Son discretas y muy prácticas.",
+        text: "Las técnicas de manos discretas las uso en el transporte público y en videollamadas. Nadie nota que estás haciendo algo, pero el efecto se siente rápido.",
         stars: 5,
     },
     {
         name: "Roberto S.",
         role: "Gerente, 45 años",
-        text: "Me dio herramientas más prácticas para el día a día. No reemplaza el acompañamiento profesional, pero es un complemento muy útil.",
+        text: "Me dio herramientas prácticas para el día a día. Lo uso como referencia rápida entre reuniones. La técnica del interruptor es mi favorita.",
         stars: 5,
     },
 ];

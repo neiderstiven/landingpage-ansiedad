@@ -14,12 +14,12 @@ const faqs = [
     {
         question: "¿Funciona si ya probé otras opciones?",
         answer:
-            "Especialmente si ya probaste otras opciones. La mayoría de soluciones (meditación, apps, tés) no están diseñadas para usarse en momentos de tensión. Estas 15 técnicas sí lo están. Son diferentes porque se enfocan en gestionar la ansiedad en el momento, no como prevención a largo plazo.",
+            "Especialmente si ya probaste otras opciones. La mayoría de soluciones (meditación, apps, tés) no están diseñadas para usarse en momentos de tensión. Estas 15 técnicas sí lo están. Son diferentes porque se enfocan en gestionar el bienestar en el momento, no como prevención a largo plazo.",
     },
     {
         question: "¿Es un reemplazo de la terapia?",
         answer:
-            "No. Este material es un complemento práctico. Este contenido no sustituye el acompañamiento psicológico o psiquiátrico profesional. Muchos profesionales recomiendan este tipo de herramientas a sus pacientes como recurso adicional entre sesiones.",
+            "No. Este material es un complemento práctico. Este contenido no sustituye el acompañamiento psicológico o psiquiátrico profesional. Muchos profesionales recomiendan este tipo de herramientas a sus pacientes como recurso adicional entre sesiones. Como dice uno de nuestros usuarios: 'No reemplaza el acompañamiento profesional, pero es un complemento muy útil'.",
     },
     {
         question: "¿Cómo recibo el PDF?",

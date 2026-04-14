@@ -4,32 +4,32 @@ const painPoints = [
     {
         icon: <Heart className="w-6 h-6" />,
         title: "Opresión en el pecho",
-        description: "Esa sensación constante de que algo te aprieta y no puedes respirar bien.",
+        description: "Esa sensación constante de que algo aprieta y no deja respirar bien.",
     },
     {
         icon: <Brain className="w-6 h-6" />,
-        title: "Tu mente no para",
-        description: "Pensamientos acelerados que no puedes controlar, especialmente de noche.",
+        title: "Mentes que no se apagan",
+        description: "Pensamientos acelerados difíciles de controlar, especialmente de noche.",
     },
     {
         icon: <Moon className="w-6 h-6" />,
-        title: "No puedes dormir",
-        description: "Te despiertas a las 3AM con el corazón acelerado y la mente llena de preocupaciones.",
+        title: "Noches en las que el sueño no llega",
+        description: "Despertarse a las 3AM con preocupaciones ocupando la mente.",
     },
     {
         icon: <AlertTriangle className="w-6 h-6" />,
-        title: "Miedo constante",
-        description: "Sientes que algo malo va a pasar, pero no sabes qué. Vives en alerta permanente.",
+        title: "Alerta constante",
+        description: "La sensación de que algo malo está a punto de pasar, sin poder identificar qué.",
     },
     {
         icon: <Frown className="w-6 h-6" />,
-        title: "Vergüenza y soledad",
-        description: '"Debería poder controlar esto." Te sientes solo/a porque nadie entiende lo que vives.',
+        title: "Difícil de explicar",
+        description: "La sensación de que esto es difícil de compartir con quienes no lo han experimentado.",
     },
     {
         icon: <AlertTriangle className="w-6 h-6" />,
-        title: "Miedo a los ataques",
-        description: "El terror de que te dé un ataque de pánico en público. Evitas situaciones por miedo.",
+        title: "Momentos intensos en público",
+        description: "Tensión intensa en situaciones sociales que genera el impulso de salir corriendo.",
     },
 ];
 
@@ -58,7 +58,7 @@ const PainSection = () => {
                         <span className="text-red-400">en momentos de tensión</span>
                     </h2>
                     <p className="text-[#C4B5D4] text-lg max-w-2xl mx-auto">
-                        No estás solo/a. Lo que sientes es real, y hay herramientas que pueden ayudar.
+                        Estos momentos son más comunes de lo que parecen. Y hay herramientas concretas para gestionarlos.
                     </p>
                 </div>
 
