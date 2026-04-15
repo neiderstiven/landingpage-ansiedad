@@ -34,7 +34,7 @@ const faqs = [
     {
         question: "¿Es seguro el pago?",
         answer:
-            "Completamente. Procesamos los pagos a través de plataformas seguras con encriptación SSL. Aceptamos tarjetas de crédito/débito, PayPal y otros métodos de pago locales según tu país.",
+            "Completamente. Procesamos los pagos a través de plataformas seguras con encriptación SSL. Aceptamos tarjetas de crédito/débito, PayPal y métodos de pago locales como PSE y Nequi para Colombia.",
     },
     {
         question: "¿Necesito conocimientos previos?",

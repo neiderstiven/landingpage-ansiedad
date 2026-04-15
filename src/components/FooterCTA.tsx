@@ -2,19 +2,29 @@ import { Button } from "@/components/ui/button";
 import { ShieldCheck, Clock, CreditCard, ArrowRight, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
 
-// Countdown timer: sets deadline to end of current day (creates real urgency)
+// Countdown timer: 20 minutes countdown (creates real urgency)
 const useCountdown = () => {
     const getTimeLeft = () => {
-        const now = new Date();
-        const endOfDay = new Date(now);
-        endOfDay.setHours(23, 59, 59, 999);
-        const diff = endOfDay.getTime() - now.getTime();
+        const STORAGE_KEY = 'countdownEndTime';
+        const now = Date.now();
+        
+        // Get or set the end time (20 minutes from first visit)
+        let endTime = parseInt(sessionStorage.getItem(STORAGE_KEY) || '0');
+        if (!endTime || now >= endTime) {
+            endTime = now + 20 * 60 * 1000; // 20 minutes
+            sessionStorage.setItem(STORAGE_KEY, endTime.toString());
+        }
+        
+        const diff = endTime - now;
+        
+        if (diff <= 0) {
+            return { minutes: 0, seconds: 0 };
+        }
 
-        const hours = Math.floor(diff / (1000 * 60 * 60));
-        const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const minutes = Math.floor(diff / (1000 * 60));
         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        return { hours, minutes, seconds };
+        return { minutes, seconds };
     };
 
     const [timeLeft, setTimeLeft] = useState(getTimeLeft);
@@ -30,7 +40,7 @@ const useCountdown = () => {
 };
 
 const FooterCTA = () => {
-    const { hours, minutes, seconds } = useCountdown();
+    const { minutes, seconds } = useCountdown();
 
     return (
         <>
@@ -51,7 +61,7 @@ const FooterCTA = () => {
                         </span>
                         <div className="flex items-center gap-1 ml-1">
                             <span className="bg-red-500/20 text-red-300 font-bold text-sm px-2 py-0.5 rounded min-w-[28px] text-center">
-                                {String(hours).padStart(2, "0")}
+                                00
                             </span>
                             <span className="text-red-400/60 text-sm">:</span>
                             <span className="bg-red-500/20 text-red-300 font-bold text-sm px-2 py-0.5 rounded min-w-[28px] text-center">
@@ -120,6 +130,25 @@ const FooterCTA = () => {
                             <span className="flex items-center gap-1">
                                 <Clock className="w-3.5 h-3.5" /> Acceso inmediato
                             </span>
+                        </div>
+
+                        {/* Colombia payment methods */}
+                        <div className="mt-6 pt-6 border-t border-purple-500/10">
+                            <p className="text-[#C4B5D4]/50 text-xs mb-3 font-semibold uppercase tracking-wide">
+                                🇨🇴 Métodos de pago para Colombia
+                            </p>
+                            <div className="flex items-center justify-center relative max-w-fit mx-auto">
+                                <img
+                                    src="/assets/nequi_pse.png"
+                                    alt="Métodos de pago aceptados: Tarjetas, PSE y Nequi"
+                                    className="h-14 w-auto"
+                                />
+                                <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[#241D3D]/80 to-transparent pointer-events-none" />
+                                <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[#241D3D]/80 to-transparent pointer-events-none" />
+                            </div>
+                            <p className="text-[#C4B5D4]/40 text-xs mt-2">
+                                Paga fácilmente desde tu cuenta bancaria o celular
+                            </p>
                         </div>
                     </div>
 

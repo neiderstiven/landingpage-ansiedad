@@ -18,7 +18,7 @@ const BiblicalPromises = () => {
   const randomPromise = biblicalPromises[Math.floor(Math.random() * biblicalPromises.length)];
 
   return (
-    <div className="text-center bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/20 rounded-2xl px-8 py-6 mx-16 mb-16">
+    <div className="text-center bg-gradient-to-r from-purple-600/20 to-pink-600/20 border border-purple-500/20 rounded-2xl px-8 py-6 mx-16 mb-8 mt-8">
       <p className="text-xl sm:text-2xl font-bold text-white mb-2">
         {randomPromise}
       </p>
