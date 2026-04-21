@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Gift, FileText, Moon, ListChecks, Smartphone, ArrowRight } from "lucide-react";
+import { productConfig } from "@/lib/config";
 
 const bonuses = [
     {
@@ -100,7 +101,8 @@ const BonusSection = () => {
 
                 <div className="text-center">
                     <Button
-                        onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
+                        onClick={() => window.open(productConfig.HOTMART_CHECKOUT_URL, "_blank", "noopener,noreferrer")}
+                        aria-label="Comprar kit completo con bonos por $5.99 USD"
                         size="lg"
                         className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg font-bold px-12 py-7 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
                     >

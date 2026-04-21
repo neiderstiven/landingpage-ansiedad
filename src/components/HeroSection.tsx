@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ShieldCheck, Zap, Clock, Star } from "lucide-react";
+import { productConfig } from "@/lib/config";
 
 const HeroSection = () => {
     const scrollToCheckout = () => {
@@ -54,8 +55,9 @@ const HeroSection = () => {
                 {/* CTA Button */}
                 <div className="flex flex-col items-center gap-4 mb-10">
                     <Button
-                        onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
+                        onClick={() => window.open(productConfig.HOTMART_CHECKOUT_URL, "_blank", "noopener,noreferrer")}
                         size="lg"
+                        aria-label="Comprar kit de bienestar Adiós Ansiedad por $5.99 USD"
                         className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg sm:text-xl font-bold px-10 sm:px-14 py-7 sm:py-8 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
                     >
                         Descarga el Kit por $5.99 USD

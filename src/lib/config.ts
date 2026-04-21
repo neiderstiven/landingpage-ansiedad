@@ -8,8 +8,19 @@ let configLoading = true;
 
 // Default fallback configuration
 const defaultConfig = {
-    API_BASE_URL: 'http://127.0.0.1:8000', // Only used if runtime config fails to load
+    API_BASE_URL: 'http://127.0.0.1:8000',
 };
+
+// --- Product & Payment Configuration ---
+export const productConfig = {
+    HOTMART_CHECKOUT_URL: 'https://pay.hotmart.com/C105110172F',
+    PRICE: '$5.99 USD',
+    PRICE_NUMERIC: 5.99,
+    CURRENCY: 'USD',
+    PRODUCT_NAME: 'Adiós Ansiedad',
+    DESCRIPTION: 'Kit de bienestar con 15 técnicas prácticas',
+} as const;
+// --- End Product & Payment Configuration ---
 
 // Function to load runtime configuration
 export async function loadRuntimeConfig(): Promise<void> {

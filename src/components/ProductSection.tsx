@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Check, ArrowRight, Zap, Shield, Eye, FlaskConical, Wallet, BookOpen } from "lucide-react";
+import { productConfig } from "@/lib/config";
 
 const features = [
     {
@@ -116,7 +117,8 @@ const ProductSection = () => {
                             ))}
                         </ul>
                         <Button
-                            onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
+                            onClick={() => window.open(productConfig.HOTMART_CHECKOUT_URL, "_blank", "noopener,noreferrer")}
+                            aria-label="Obtener acceso inmediato al kit Adiós Ansiedad"
                             className="mt-8 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold px-8 py-6 rounded-full shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 hover:scale-105"
                         >
                             Obtener Acceso Inmediato

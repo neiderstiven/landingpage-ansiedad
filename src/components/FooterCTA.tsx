@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ShieldCheck, Clock, CreditCard, ArrowRight, Heart } from "lucide-react";
 import { useState, useEffect } from "react";
+import { productConfig } from "@/lib/config";
 
 // Countdown timer: 20 minutes countdown (creates real urgency)
 const useCountdown = () => {
@@ -113,8 +114,9 @@ const FooterCTA = () => {
 
                         <Button
                             size="lg"
+                            aria-label="Descargar kit de bienestar Adiós Ansiedad"
                             className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white text-lg font-bold py-7 rounded-full shadow-2xl shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-[1.02]"
-                            onClick={() => window.open("https://pay.hotmart.com/C105110172F", "_blank")}
+                            onClick={() => window.open(productConfig.HOTMART_CHECKOUT_URL, "_blank", "noopener,noreferrer")}
                         >
                             Descargar el Kit — $5.99 USD
                             <ArrowRight className="w-5 h-5 ml-2" />
