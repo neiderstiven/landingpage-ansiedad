@@ -3,8 +3,8 @@ import { Heart, Brain, Moon, AlertTriangle, X, Frown } from "lucide-react";
 const painPoints = [
     {
         icon: <Heart className="w-6 h-6" />,
-        title: "Opresión en el pecho",
-        description: "Esa sensación constante de que algo aprieta y no deja respirar bien.",
+        title: "Cuando el día a día te supera",
+        description: "Esa sensación de que el ritmo de vida te aprieta y no encuentras respiro.",
     },
     {
         icon: <Brain className="w-6 h-6" />,
@@ -18,8 +18,8 @@ const painPoints = [
     },
     {
         icon: <AlertTriangle className="w-6 h-6" />,
-        title: "Alerta constante",
-        description: "La sensación de que algo malo está a punto de pasar, sin poder identificar qué.",
+        title: "Días que se sienten abrumadores",
+        description: "Herramientas para recuperar tu centro cuando el ritmo te supera.",
     },
     {
         icon: <Frown className="w-6 h-6" />,
@@ -28,8 +28,8 @@ const painPoints = [
     },
     {
         icon: <AlertTriangle className="w-6 h-6" />,
-        title: "Momentos intensos en público",
-        description: "Tensión intensa en situaciones sociales que genera el impulso de salir corriendo.",
+        title: "Momentos que requieren calma",
+        description: "Técnicas discretas para usar en cualquier situación.",
     },
 ];
 

@@ -14,7 +14,7 @@ export default function ValueProposition() {
     },
     {
       icon: Pause,
-      title: "No es sobre eliminar la ansiedad",
+      title: "No es sobre eliminar el estrés",
       text: "Es sobre recuperar tu botón de pausa.",
     },
   ];

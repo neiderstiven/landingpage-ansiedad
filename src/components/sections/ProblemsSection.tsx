@@ -2,12 +2,12 @@ import { Wind, CloudLightning, MoonStar, AlertCircle, MessageCircleOff, Users2 }
 
 export default function ProblemsSection() {
   const problems = [
-    { icon: Wind, title: "Opresión en el pecho", desc: "Esa sensación constante de que algo aprieta y no deja respirar bien." },
+    { icon: Wind, title: "Cuando el día a día te supera", desc: "Esa sensación de que el ritmo de vida te aprieta y no encuentras respiro." },
     { icon: CloudLightning, title: "Mentes que no se apagan", desc: "Pensamientos acelerados difíciles de controlar, especialmente de noche." },
     { icon: MoonStar, title: "Noches en las que el sueño no llega", desc: "Despertarse a las 3AM con preocupaciones ocupando la mente." },
-    { icon: AlertCircle, title: "Alerta constante", desc: "La sensación de que algo malo está a punto de pasar, sin poder identificar qué." },
+    { icon: AlertCircle, title: "Días que se sienten abrumadores", desc: "Herramientas para recuperar tu centro cuando el ritmo te supera." },
     { icon: MessageCircleOff, title: "Difícil de explicar", desc: "La sensación de que esto es difícil de compartir con quienes no lo han experimentado." },
-    { icon: Users2, title: "Momentos intensos en público", desc: "Tensión intensa en situaciones sociales que genera el impulso de salir corriendo." },
+    { icon: Users2, title: "Momentos que requieren calma", desc: "Técnicas discretas para usar en cualquier situación." },
   ];
 
   return (

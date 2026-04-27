@@ -43,10 +43,10 @@ export default function FinalCTA() {
 
         <div className="mt-10 text-center">
           <h2 className="font-serif text-3xl font-bold text-[#2C3E50] md:text-4xl lg:text-5xl">
-            Recupera momentos de calma.
+            Recupera momentos de paz.
           </h2>
           <p className="mt-3 font-serif text-xl italic text-[#5B8DB8] md:text-2xl">
-            La calma está a un clic.
+            Descubre herramientas que muchas personas usan para gestionar el estrés.
           </p>
           <p className="mx-auto mt-4 max-w-xl text-slate-600 md:text-lg">
             Un kit práctico de bienestar para usar cuando lo necesites. Descarga inmediata.

@@ -76,10 +76,10 @@ const FooterCTA = () => {
                     </div>
 
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-                        Recupera momentos de calma.
+                        Recupera momentos de paz.
                         <br />
                         <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            La calma está a un clic.
+                            Descubre herramientas que muchas personas usan para gestionar el estrés.
                         </span>
                     </h2>
 
@@ -179,14 +179,13 @@ const FooterCTA = () => {
                     </p>
                     <p className="text-[#C4B5D4]/20 text-xs max-w-lg mx-auto mb-4">
                         Aviso: Este producto es un recurso educativo y no reemplaza el consejo médico profesional.
-                        Si experimentas síntomas severos, consulta a un profesional de salud mental.
+                        Si experimentas situaciones que requieren apoyo profesional, consulta a un especialista.
                     </p>
                     <div className="bg-[#241D3D]/40 border border-white/10 rounded-xl p-4 max-w-2xl mx-auto">
                         <p className="text-[#C4B5D4]/40 text-xs leading-relaxed">
                             <strong className="text-[#C4B5D4]/60">Disclaimer:</strong> Este producto es una guía educativa de bienestar. 
-                            No sustituye consejo médico, psicológico o psiquiátrico profesional. No diagnostica ni trata condiciones de salud. 
-                            Los resultados pueden variar de persona a persona. Si estás experimentando una crisis de salud mental, 
-                            busca ayuda profesional inmediatamente.
+                            No sustituye consejo médico, psicológico o psiquiátrico profesional. No diagnostica ni trata condiciones. 
+                            Si estás experimentando una situación que requiere apoyo profesional, busca ayuda especializada.
                         </p>
                     </div>
                 </div>

@@ -6,7 +6,7 @@ export default function Footer() {
     "No diagnostica ni trata trastornos de ansiedad, depresión u otras condiciones de salud.",
     "Estas técnicas están diseñadas para ayudarte a gestionar el estrés del día a día, no como cura.",
     "Los resultados pueden variar significativamente de persona a persona.",
-    "Si experimentas síntomas severos o una crisis de salud mental, busca ayuda profesional inmediatamente.",
+    "Si experimentas situaciones que requieren apoyo profesional, busca ayuda especializada inmediatamente.",
     "El contenido aquí presentado no constituye diagnóstico médico, consejo médico o recomendaciones de tratamiento.",
   ];
 
