@@ -70,9 +70,12 @@ export default function HeroSection() {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#7FB9A8]/30 to-[#E8A87C]/30 blur-2xl" />
               <img
-                src="/assets/ebook-ansiedad.png"
+                src="/assets/ebook-ansiedad.webp"
                 alt="Adiós Ansiedad - Kit de bienestar digital en tablet y celular"
+                width={600}
+                height={800}
                 className="relative rounded-3xl shadow-2xl"
+                fetchPriority="high"
               />
               <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-white px-5 py-4 shadow-xl md:block">
                 <div className="flex items-center gap-3">

@@ -96,8 +96,12 @@ export default function TestimonialsSection() {
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
           <div className="relative overflow-hidden rounded-3xl shadow-xl lg:col-span-1">
             <img
-              src="/assets/meditacion.png"
+              src="/assets/meditacion.webp"
               alt="Persona en paz"
+              width={400}
+              height={600}
+              loading="lazy"
+              decoding="async"
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#2C3E50] via-transparent to-transparent" />

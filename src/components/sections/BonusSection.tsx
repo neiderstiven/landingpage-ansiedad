@@ -27,8 +27,12 @@ export default function BonusSection() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#7FB9A8]/20 to-[#E8A87C]/20 blur-2xl" />
             <img
-              src="/assets/bonos-adicionales.png"
+              src="/assets/bonos-adicionales.webp"
               alt="Kit de bonos - Kit de Emergencia y Guía de Sueño"
+              width={600}
+              height={400}
+              loading="lazy"
+              decoding="async"
               className="relative rounded-3xl shadow-xl"
             />
           </div>

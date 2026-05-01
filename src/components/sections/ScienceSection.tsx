@@ -27,6 +27,10 @@ export default function ScienceSection() {
       <img
         src="https://mgx-backend-cdn.metadl.com/generate/images/1156869/2026-04-26/nmjbltyaafna/science-abstract-calm.png"
         alt=""
+        width={1920}
+        height={1080}
+        loading="lazy"
+        decoding="async"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#2C3E50]/80 to-[#2C3E50]" />

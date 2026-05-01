@@ -45,8 +45,12 @@ export default function ProductSection() {
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#5B8DB8]/20 to-[#7FB9A8]/20 blur-2xl" />
             <img
-              src="/assets/ebook-ansiedad.png"
+              src="/assets/ebook-ansiedad.webp"
               alt="Adiós Ansiedad - Kit de bienestar"
+              width={600}
+              height={800}
+              loading="lazy"
+              decoding="async"
               className="relative rounded-3xl shadow-xl"
             />
           </div>
