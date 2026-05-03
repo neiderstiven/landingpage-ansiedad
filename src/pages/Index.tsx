@@ -1,15 +1,18 @@
+import { Suspense, lazy } from "react";
 import HeroSection from "@/components/sections/HeroSection";
 import ValueProposition from "@/components/sections/ValueProposition";
 import BonusSection from "@/components/sections/BonusSection";
 import ProblemsSection from "@/components/sections/ProblemsSection";
-import AlternativesSection from "@/components/sections/AlternativesSection";
-import ScienceSection from "@/components/sections/ScienceSection";
-import ProductSection from "@/components/sections/ProductSection";
-import ComparisonSection from "@/components/sections/ComparisonSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
-import FAQSection from "@/components/sections/FAQSection";
-import FinalCTA from "@/components/sections/FinalCTA";
-import Footer from "@/components/sections/Footer";
+
+// Lazy loaded sections
+const AlternativesSection = lazy(() => import("@/components/sections/AlternativesSection"));
+const ScienceSection = lazy(() => import("@/components/sections/ScienceSection"));
+const ProductSection = lazy(() => import("@/components/sections/ProductSection"));
+const ComparisonSection = lazy(() => import("@/components/sections/ComparisonSection"));
+const TestimonialsSection = lazy(() => import("@/components/sections/TestimonialsSection"));
+const FAQSection = lazy(() => import("@/components/sections/FAQSection"));
+const FinalCTA = lazy(() => import("@/components/sections/FinalCTA"));
+const Footer = lazy(() => import("@/components/sections/Footer"));
 
 export default function Index() {
   return (
@@ -18,14 +21,16 @@ export default function Index() {
       <ValueProposition />
       <BonusSection />
       <ProblemsSection />
-      <AlternativesSection />
-      <ScienceSection />
-      <ProductSection />
-      <ComparisonSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <FinalCTA />
-      <Footer />
+      <Suspense fallback={<div className="h-20" />}>
+        <AlternativesSection />
+        <ScienceSection />
+        <ProductSection />
+        <ComparisonSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <FinalCTA />
+        <Footer />
+      </Suspense>
     </div>
   );
 }

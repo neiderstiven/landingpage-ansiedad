@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { productConfig } from "@/lib/config";
+import { landingData } from "@/lib/data/landing-data";
 import { Download, Shield, Lock, Users, Star } from "lucide-react";
 
 export default function HeroSection() {
+  const { heroStats } = landingData;
   const scrollToProduct = () => {
     document.getElementById("product")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -18,7 +20,7 @@ export default function HeroSection() {
           <div className="order-2 lg:order-1">
             <div className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-2 text-xs font-medium text-[#5B8DB8] shadow-sm backdrop-blur md:text-sm">
               <Users className="h-4 w-4" />
-              <span>+2,500 descargas del kit de bienestar</span>
+              <span>{heroStats.downloads} descargas del kit de bienestar</span>
             </div>
 
             <h1 className="mt-6 font-serif text-4xl leading-[1.1] tracking-tight text-[#2C3E50] md:text-5xl lg:text-6xl">
@@ -32,12 +34,12 @@ export default function HeroSection() {
 
             <p className="mt-3 text-sm italic text-slate-500">
               Un sistema de bolsillo en tu celular con herramientas para gestionar el estrés del día a día.
-              Usado por más de 2,500 personas.
+              Usado por más de {heroStats.downloads} personas.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <Button
-                onClick={() => window.open(productConfig.HOTMART_CHECKOUT_URL, "_blank", "noopener,noreferrer")}
+                onClick={scrollToProduct}
                 size="lg"
                 className="h-14 rounded-full bg-[#5B8DB8] px-8 text-base font-semibold text-white shadow-lg shadow-[#5B8DB8]/30 transition hover:bg-[#4A7BA3] hover:shadow-xl"
               >
@@ -45,7 +47,7 @@ export default function HeroSection() {
               </Button>
               <div className="flex items-center gap-2 text-sm text-slate-600">
                 <Star className="h-4 w-4 fill-[#E8A87C] text-[#E8A87C]" />
-                <span className="font-medium">4.9/5</span>
+                <span className="font-medium">{heroStats.rating}</span>
                 <span className="text-slate-400">· Calificación promedio</span>
               </div>
             </div>
@@ -75,7 +77,7 @@ export default function HeroSection() {
                 width={600}
                 height={800}
                 className="relative rounded-3xl shadow-2xl"
-                fetchPriority="high"
+                {...({ fetchpriority: "high" } as any)}
               />
               <div className="absolute -bottom-6 -left-6 hidden rounded-2xl bg-white px-5 py-4 shadow-xl md:block">
                 <div className="flex items-center gap-3">
