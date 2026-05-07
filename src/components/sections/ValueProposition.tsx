@@ -26,12 +26,12 @@ export default function ValueProposition() {
           {items.map((item, i) => (
             <div
               key={i}
-              className="group rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-[#FAF7F2] p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-background p-8 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[#5B8DB8] to-[#7FB9A8] text-white shadow-lg">
+              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-secondary text-white shadow-lg">
                 <item.icon className="h-7 w-7" />
               </div>
-              <h3 className="mb-2 font-serif text-xl font-semibold text-[#2C3E50] md:text-2xl">
+              <h3 className="mb-2 font-serif text-xl font-semibold text-foreground md:text-2xl">
                 {item.title}
               </h3>
               <p className="text-slate-600">{item.text}</p>

@@ -14,10 +14,10 @@ export default function ProblemsSection() {
     <section className="bg-white py-20 md:py-28">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="text-center">
-          <span className="inline-flex items-center gap-2 rounded-full bg-[#5B8DB8]/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-[#5B8DB8]">
+          <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-primary">
             Tu experiencia importa
           </span>
-          <h2 className="mt-5 font-serif text-3xl font-bold text-[#2C3E50] md:text-4xl lg:text-5xl">
+          <h2 className="mt-5 font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
             Estas experiencias son más comunes de lo que crees
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-600 md:text-lg">
@@ -30,12 +30,12 @@ export default function ProblemsSection() {
           {problems.map((p, i) => (
             <div
               key={i}
-              className="group rounded-2xl border border-slate-100 bg-gradient-to-br from-white to-[#FAF7F2] p-6 shadow-sm transition hover:border-[#5B8DB8]/30 hover:shadow-lg"
+              className="group rounded-2xl border border-slate-100 bg-gradient-to-br from-white to-background p-6 shadow-sm transition hover:border-primary/30 hover:shadow-lg"
             >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#5B8DB8]/10 text-[#5B8DB8] transition group-hover:bg-[#5B8DB8] group-hover:text-white">
+              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition group-hover:bg-primary group-hover:text-white">
                 <p.icon className="h-6 w-6" />
               </div>
-              <h3 className="font-serif text-lg font-semibold text-[#2C3E50]">{p.title}</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground">{p.title}</h3>
               <p className="mt-2 text-sm text-slate-600">{p.desc}</p>
             </div>
           ))}

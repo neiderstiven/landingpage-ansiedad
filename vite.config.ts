@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc';
 import path from 'path';
 import { viteSourceLocator } from '@metagptx/vite-plugin-source-locator';
 import { atoms } from '@metagptx/web-sdk/plugins';
+import compression from 'vite-plugin-compression';
 
 function escapeHtmlAttr(str: string): string {
   return str
@@ -28,6 +29,14 @@ export default defineConfig(({ mode }) => ({
     }),
     react(),
     atoms(),
+    compression({
+      algorithm: 'gzip',
+      ext: '.gz',
+    }),
+    compression({
+      algorithm: 'brotliCompress',
+      ext: '.br',
+    }),
   ],
   resolve: {
     alias: {

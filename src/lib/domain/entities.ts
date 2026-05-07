@@ -1,24 +1,24 @@
 export interface Testimonial {
-  initial: string;
-  name: string;
-  role: string;
-  text: string;
-  color: string;
+  readonly initial: string;
+  readonly name: string;
+  readonly role: string;
+  readonly text: string;
+  readonly color: string;
 }
 
 export interface FAQItem {
-  q: string;
-  a: string;
+  readonly q: string;
+  readonly a: string;
 }
 
 export interface Stat {
-  value: string;
-  label: string;
+  readonly value: string;
+  readonly label: string;
 }
 
 export interface LandingData {
-  testimonials: Testimonial[];
-  faqs: FAQItem[];
-  stats: Stat[];
-  biblicalPromises: string[];
+  readonly testimonials: readonly Testimonial[];
+  readonly faqs: readonly FAQItem[];
+  readonly stats: readonly Stat[];
+  readonly biblicalPromises: readonly string[];
 }

@@ -11,10 +11,10 @@ export default function ComparisonSection() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-[#FAF7F2] to-[#F0EBE3] py-20 md:py-28">
+    <section className="bg-gradient-to-b from-background to-slate-100 py-20 md:py-28">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="text-center">
-          <h2 className="font-serif text-3xl font-bold text-[#2C3E50] md:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
             ¿Por qué es diferente?
           </h2>
           <p className="mt-4 text-slate-600 md:text-lg">Compara y decide por ti mismo/a</p>
@@ -22,7 +22,7 @@ export default function ComparisonSection() {
 
         <div className="mt-12 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
           <div className="grid grid-cols-2 divide-x divide-slate-200">
-            <div className="bg-gradient-to-br from-[#5B8DB8] to-[#7FB9A8] p-5 text-center text-white md:p-6">
+            <div className="bg-gradient-to-br from-primary to-secondary p-5 text-center text-white md:p-6">
               <Sparkles className="mx-auto h-6 w-6" />
               <h3 className="mt-2 font-serif text-lg font-bold md:text-xl">Adiós Ansiedad</h3>
             </div>
@@ -35,13 +35,13 @@ export default function ComparisonSection() {
           {rows.map((row, i) => (
             <div
               key={i}
-              className={`grid grid-cols-2 divide-x divide-slate-200 ${i % 2 === 0 ? "bg-white" : "bg-[#FAF7F2]"}`}
+              className={`grid grid-cols-2 divide-x divide-slate-200 ${i % 2 === 0 ? "bg-white" : "bg-background"}`}
             >
               <div className="flex items-start gap-3 p-5 md:p-6">
-                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#7FB9A8] text-white">
+                <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-secondary text-white">
                   <Check className="h-4 w-4" />
                 </span>
-                <span className="text-sm font-medium text-[#2C3E50] md:text-base">{row.ours}</span>
+                <span className="text-sm font-medium text-foreground md:text-base">{row.ours}</span>
               </div>
               <div className="flex items-start gap-3 p-5 md:p-6">
                 <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-100 text-red-500">
